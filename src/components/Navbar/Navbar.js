@@ -1,7 +1,8 @@
 import React from "react";
+import styles from "./Navbar.module.css";
 
 const Navbar = () => {
-  return <div>DEPO24-ASSIGNMENT</div>;
+  return <div className={styles.navbarContainer}>DEPO24-ASSIGNMENT</div>;
 };
 
 export default Navbar;
