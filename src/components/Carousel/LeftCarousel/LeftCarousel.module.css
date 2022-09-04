@@ -1,0 +1,46 @@
+.leftCarouselContainer {
+  flex: 0.3;
+  background-color: azure;
+  overflow: scroll;
+}
+.l1Container {
+  /* width: 100%; */
+  margin: 1rem;
+  padding: 1rem;
+  text-align: center;
+  border: 1px solid black;
+  border-radius: 20px;
+  cursor: pointer;
+}
+.l1Container:hover {
+  background-color: bisque;
+}
+.upDownArrow {
+  font-size: 1.5rem;
+}
+
+.l1Title {
+  font-size: 2rem;
+  font-weight: 400;
+  /* border: 1px solid black; */
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+  text-align: center;
+  padding: 15px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.l1Title:hover {
+  background-color: aquamarine;
+}
+
+.l2Title {
+  text-align: center;
+  font-size: 1.5rem;
+  padding: 10px;
+  cursor: pointer;
+}
+.l2Title:hover {
+  color: gray;
+}

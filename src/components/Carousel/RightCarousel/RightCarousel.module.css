@@ -1,0 +1,18 @@
+.rightCarouselContainer {
+  flex: 0.7;
+  background-color: burlywood;
+  display: flex;
+  flex-wrap: wrap;
+}
+.l2Name {
+  width: 100vw;
+}
+.itemsContainer {
+  width: 20vw;
+  display: flex;
+  flex-wrap: wrap;
+}
+.itemImg {
+  width: 1vw;
+  height: 1vh;
+}
