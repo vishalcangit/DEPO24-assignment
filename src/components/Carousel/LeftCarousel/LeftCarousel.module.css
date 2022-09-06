@@ -28,6 +28,7 @@
   padding: 15px;
   cursor: pointer;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: space-between;
 }
@@ -35,12 +36,37 @@
   background-color: aquamarine;
 }
 
-.l2Title {
-  text-align: center;
-  font-size: 1.5rem;
-  padding: 10px;
+.links {
   cursor: pointer;
+  height: 2rem;
+  font-size: 1.6rem;
+  margin: 15px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: black;
 }
-.l2Title:hover {
+.links:hover {
   color: gray;
+}
+
+@media screen and (max-width: 480px) {
+  .leftCarouselContainer {
+    flex: 0.4;
+  }
+  .l1Title {
+    text-align: left;
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 10px;
+    justify-content: flex-start;
+  }
+  .links {
+    font-size: 0.9rem;
+    padding: 5px;
+    font-weight: 600;
+    align-items: center;
+    justify-content: flex-start;
+  }
 }

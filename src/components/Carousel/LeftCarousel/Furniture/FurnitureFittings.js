@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-scroll";
 import styles from "../../LeftCarousel/LeftCarousel.module.css";
 const furnitureItems = [
   "Accessories",
@@ -24,7 +25,6 @@ const furnitureItems = [
 const FurnitureFittings = () => {
   const [showDropdown, setShowDropdown] = useState("false");
 
-  console.log(furnitureItems);
   return (
     <div>
       <h4
@@ -41,7 +41,17 @@ const FurnitureFittings = () => {
         </span>
       </h4>
       {!showDropdown &&
-        furnitureItems.map((item) => <p className={styles.l2Title}>{item}</p>)}
+        furnitureItems.map((item) => (
+          <Link
+            to={item}
+            // smooth={true}
+            // offset={200}
+            // duration={500}
+            className={styles.links}
+          >
+            {item}
+          </Link>
+        ))}
     </div>
   );
 };

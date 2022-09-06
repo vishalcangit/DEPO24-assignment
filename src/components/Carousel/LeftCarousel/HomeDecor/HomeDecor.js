@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-scroll";
 import styles from "../../LeftCarousel/LeftCarousel.module.css";
 
 const homeDecorItems = ["Lamp & Lights"];
@@ -21,7 +22,17 @@ const HomeDecor = () => {
         </span>
       </h4>
       {!showDropdown &&
-        homeDecorItems.map((item) => <p className={styles.l2Title}>{item}</p>)}
+        homeDecorItems.map((item) => (
+          <Link
+            className={styles.links}
+            to={item}
+            smooth={true}
+            offset={200}
+            duration={500}
+          >
+            {item}
+          </Link>
+        ))}
     </div>
   );
 };
