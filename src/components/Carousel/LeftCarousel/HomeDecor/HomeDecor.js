@@ -23,15 +23,9 @@ const HomeDecor = () => {
       </h4>
       {!showDropdown &&
         homeDecorItems.map((item) => (
-          <Link
-            className={styles.links}
-            to={item}
-            smooth={true}
-            offset={200}
-            duration={500}
-          >
+          <a className={styles.links} href={`#${item}`}>
             {item}
-          </Link>
+          </a>
         ))}
     </div>
   );

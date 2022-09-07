@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
+import * as Scroll from "react-scroll";
 import { Link } from "react-scroll";
 import styles from "../../LeftCarousel/LeftCarousel.module.css";
 const furnitureItems = [
@@ -42,15 +43,9 @@ const FurnitureFittings = () => {
       </h4>
       {!showDropdown &&
         furnitureItems.map((item) => (
-          <Link
-            to={item}
-            // smooth={true}
-            // offset={200}
-            // duration={500}
-            className={styles.links}
-          >
+          <a href={`#${item}`} className={styles.links}>
             {item}
-          </Link>
+          </a>
         ))}
     </div>
   );

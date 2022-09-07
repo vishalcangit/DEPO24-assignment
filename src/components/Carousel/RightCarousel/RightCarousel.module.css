@@ -1,4 +1,5 @@
 .rightCarouselContainer {
+  scroll-behavior: smooth;
   overflow: scroll;
   flex: 0.7;
   /* background-color: burlywood; */
