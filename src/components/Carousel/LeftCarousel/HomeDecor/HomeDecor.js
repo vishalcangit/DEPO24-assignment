@@ -10,7 +10,7 @@ const HomeDecor = () => {
     <div>
       <h4
         onClick={() => setShowDropdown(!showDropdown)}
-        className={styles.l1Title}
+        className={showDropdown ? styles.l1Title : styles.l1TitleActive}
       >
         HomeDecor
         <span>
